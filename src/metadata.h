@@ -7,7 +7,7 @@ using namespace std;
 class metadata
 {
     public:
-        metadata(string name);
+        metadata();
         virtual ~metadata();
 
     protected:

@@ -2,10 +2,10 @@
 
 file::file()
 {
-    md::metadata();
+    metadata md();
 }
 
 file::~file()
 {
-    md::~metadata();
+    ~md();
 }

@@ -10,7 +10,12 @@ metadata::~metadata()
     //dtor
 }
 
-metadata::getsize()
+int metadata::getsize()
 {
     return metadata::size;
+}
+
+void metadata::recalcsize()
+{
+
 }
