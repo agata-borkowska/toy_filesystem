@@ -6,8 +6,7 @@
 class file
 {
     public:
-        file();
-        virtual ~file();
+        file(string key);
 
     protected:
 

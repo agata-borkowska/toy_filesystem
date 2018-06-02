@@ -9,9 +9,6 @@ class directory
 {
     public:
         directory(string name);
-        virtual ~directory();
-        bool add_dir(directory dir);
-        bool add_file(file f);
 
     protected:
 

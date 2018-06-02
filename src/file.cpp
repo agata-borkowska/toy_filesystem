@@ -7,5 +7,4 @@ file::file()
 
 file::~file()
 {
-    ~md();
 }
