@@ -9,13 +9,14 @@ class directory
 {
     public:
         directory(string name);
+        string getname();
 
     protected:
 
     private:
         string name;
         metadata md;
-        std::vector<directory> dirs;
+        std::vector<directory> childdirs;
         std::vector<file> files;
 };
 

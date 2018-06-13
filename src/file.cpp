@@ -5,6 +5,6 @@ file::file()
     metadata md();
 }
 
-file::~file()
-{
+string file::getname(){
+    return name;
 }

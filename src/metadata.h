@@ -1,12 +1,14 @@
 #ifndef METADATA_H
 #define METADATA_H
 #include <string>
-using namespace std;
+#include "directory.h"
+#include "file.h"
 
 
 class metadata
 {
     public:
+        metadata(string name, directory* parentdir)
 
     protected:
         string getname();
@@ -16,6 +18,7 @@ class metadata
     private:
         string name;
         int size;
+        directory* parentdir;
 };
 
 #endif // METADATA_H

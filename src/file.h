@@ -3,10 +3,10 @@
 #include <string>
 #include "metadata.h"
 
-class file
-{
+class file {
     public:
         file(string key);
+        string getname();
 
     protected:
 

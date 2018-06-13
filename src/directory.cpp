@@ -4,5 +4,9 @@
 
 directory::directory(string key)
 {
-    name = key;
+    metadata md(key, util::getcurrentdir());
+}
+
+directory::getname() {
+    return name;
 }
