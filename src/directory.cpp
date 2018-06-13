@@ -2,11 +2,12 @@
 #include "metadata.h"
 #include "directory.h"
 
-directory::directory(string key)
+directory::directory(std::string key)
 {
-    metadata md(key, util::getcurrentdir());
+    name = key;
+    //metadata md(key, util::getcurrentdir());
 }
 
-directory::getname() {
+std::string directory::getname() {
     return name;
 }

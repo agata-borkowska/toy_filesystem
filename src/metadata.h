@@ -8,15 +8,15 @@
 class metadata
 {
     public:
-        metadata(string name, directory* parentdir)
+        metadata(std::string key, directory* parentdir);
 
     protected:
-        string getname();
+        std::string getname();
         int getsize();
         int recalcsize();
 
     private:
-        string name;
+        std::string name;
         int size;
         directory* parentdir;
 };

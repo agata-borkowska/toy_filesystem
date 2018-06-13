@@ -1,8 +1,9 @@
 #include "file.h"
 
-file::file()
+file::file(std::string key)
 {
-    metadata md();
+    name = key;
+    //metadata md();
 }
 
 string file::getname(){

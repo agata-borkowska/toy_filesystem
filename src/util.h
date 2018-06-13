@@ -11,7 +11,7 @@ class util
         bool remove_file(file* file);
         bool remove_directory(directory* dir);
         bool cd(directory* dir);
-        bool cd(string dirname);
+        bool cd(std::string dirname);
         directory* getcurrentdir();
         void list();
 

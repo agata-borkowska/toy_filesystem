@@ -5,14 +5,14 @@
 
 class file {
     public:
-        file(string key);
-        string getname();
+        file(std::string key);
+        std::string getname();
 
     protected:
 
     private:
-        string name;
-        metadata md;
+        std::string name;
+        // metadata md;
 };
 
 #endif // FILE_H

@@ -8,14 +8,14 @@
 class directory
 {
     public:
-        directory(string name);
-        string getname();
+        directory(std::string name);
+        std::string getname();
 
     protected:
 
     private:
-        string name;
-        metadata md;
+        std::string name;
+        // metadata md;
         std::vector<directory> childdirs;
         std::vector<file> files;
 };

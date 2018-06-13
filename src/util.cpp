@@ -25,7 +25,7 @@ util::cd(directory* dir) {
     return true;
 }
 
-util::cd(string dirname) {
+util::cd(std::string dirname) {
     bool found = false;
     for(auto& dir : dirs) {
         if (dirname.compare(dir.getname()) == 0) {
