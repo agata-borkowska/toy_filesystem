@@ -1,5 +1,4 @@
 #include <string>
-#include "metadata.h"
 #include "directory.h"
 
 directory::directory(std::string key)
@@ -10,4 +9,12 @@ directory::directory(std::string key)
 
 std::string directory::getname() {
     return name;
+}
+
+std::vector<directory> directory::getchilddirs() {
+    return childdirs;
+}
+
+std::vector<file> directory::getfiles() {
+    return files;
 }

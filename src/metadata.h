@@ -1,9 +1,9 @@
 #ifndef METADATA_H
 #define METADATA_H
 #include <string>
-#include "directory.h"
 #include "file.h"
 
+class directory;
 
 class metadata
 {

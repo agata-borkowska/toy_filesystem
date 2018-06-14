@@ -6,6 +6,6 @@ file::file(std::string key)
     //metadata md();
 }
 
-string file::getname(){
+std::string file::getname(){
     return name;
 }

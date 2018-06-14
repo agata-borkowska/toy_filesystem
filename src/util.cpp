@@ -6,28 +6,28 @@ util::util(directory* root) {
     currentdir = root;
 }
 
-util::getcurrentdir() {
+directory* util::getcurrentdir() {
     return currentdir;
 }
 
-util::list() {
-    for (auto& dir : dirs) {
+void util::list() {
+    for (auto& dir : currentdir->getchilddirs()) {
         std::cout << "/" << dir.getname() << std::endl;
     }
-    for (auto& file : files) {
+    for (auto& file : currentdir->getfiles()) {
         std::cout << file.getname() << std::endl;
     }
 }
 
-util::cd(directory* dir) {
+bool util::cd(directory* dir) {
     // TODO: check if dir exists
     currentdir = dir;
     return true;
 }
 
-util::cd(std::string dirname) {
+bool util::cd(std::string dirname) {
     bool found = false;
-    for(auto& dir : dirs) {
+    for(auto& dir : currentdir->getchilddirs()) {
         if (dirname.compare(dir.getname()) == 0) {
             found = util::cd(&dir);
             if (found) {

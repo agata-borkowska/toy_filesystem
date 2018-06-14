@@ -10,6 +10,8 @@ class directory
     public:
         directory(std::string name);
         std::string getname();
+        std::vector<directory> getchilddirs();
+        std::vector<file> getfiles();
 
     protected:
 
